@@ -1,0 +1,24 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "this is my final project",
+  "main": "index.html",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KiyaTilahun/final-project.git"
+  },
+  "author": "kiya tilahun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KiyaTilahun/final-project/issues"
+  },
+  "homepage": "https://github.com/KiyaTilahun/final-project#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
