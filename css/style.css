@@ -7,3 +7,12 @@
      display: none;
     }
   }
+  .carimg{
+max-height: 300px;
+/* filter: grayscale(90%); */
+  }
+  .carousel-caption{
+    background-color:#37434d86;
+   
+  }
+  
