@@ -2,10 +2,56 @@
     width:50px;
     height: 40px;
 }
+.team-member img{
+  max-width: 200px;
+  max-height: 200px;
+}
+/* i{
+  background-color: black;
+  color: white;
+  font-size: 150%;
+  border: 50%;
+
+
+} */
+.team-member{
+  text-align: center;
+}
+.modal-head{
+  background-color: #37434dd3;
+}
+.carimg{
+  height: 300px;
+}
+.card{
+  border: none;
+  outline: none;
+}
+.cardd{
+  min-height: 150px;
+  
+}
+.cardd img{
+  max-height: 300px;
+  /* width: 100px; */
+  /* border-radius: 50%; */
+}
+.card-header{
+  text-align: center;
+}
+section{
+  margin-top: 30px;
+}
 @media screen and (max-width: 917px) {
 .img {
      display: none;
     }
+  }
+  @media  screen and (max-width:600px) {
+    .staffs{
+      display: none;
+    }
+    
   }
   .carimg{
 max-height: 300px;

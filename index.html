@@ -12,8 +12,8 @@
      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header><nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" style="height:80px;background-color:#37434d;color:#ffffff;">
-        <div class="container-fluid"><span><img class="img" src="img/pngwing.com.png" alt=""></span><a class="navbar-brand" href="#">Mekodoniya Charity Association</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    <header><nav class="navbar navbar-light navbar-expand-md sticky-top " style="background-color:#37434d;color:#ffffff;">
+        <div class="container-fluid"><span><img class="img" src="img/pngwing.com.png" alt=""></span><a class="navbar-brand" href="#">Mekodoniya Charity Association</a><button data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
@@ -21,7 +21,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#"><i class="fa fa-wpexplorer"></i> Explore</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#"><i class="fa fa-star-o"></i> Features</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#"><i class="fa fa-user-circle-o"></i> Portfolio</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#"><i class="fa fa-sign-in"></i> Sign In</a></li>
+                    <li class="nav-item" role="presentation"><i class="fa fa-sign-in"></i>  <button style=" border:none;background-color: #37434d00;"  data-toggle="modal" data-target="#loginModal" >Sign In</button></a></li>
                 </ul>
         </div>
         </div>
@@ -65,8 +65,174 @@
         </a>
       </div>
 
-    <footer style="background-color:#37434d;color:#ffffff;"><div class="footer-dark">
-        <footer>
+
+      <div id="loginModal" class="modal fade" role="dialog" style="display: none;top:50%;left:50%;transform: translate(-50%,-50%);" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="content">
+          <div class="modal-content col-md-8"  >
+            <div class="modal-header head times">
+              <h4 class="modal-title">Login</h4>
+              <button type="button" class="close" data-dismiss="modal"><span class="times">×</span></button>
+            </div>
+            <div class="modal-body body container">   
+                  <form>
+              <div class="form-row ">
+                  <div class="form-group  offset-2 col-8 align-items-center ">
+                          <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                          <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                  </div>
+                  </div>
+                  <div class="form-row">
+                  <div class="form-group offset-2 col-8 align-items-center">
+                      <label class="sr-only" for="exampleInputPassword3">Password</label>
+                      <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                  </div>
+                  <div class="col-sm-auto">
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label"> Remember me
+                          </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+              </div>
+          </form></div>
+          </div>
+        </div>
+      </div>  
+
+      <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Services</h2>
+                    <h3 class="text-muted section-subheading">Lorem ipsum dolor sit amet consectetur</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-secondary " ></i><i  class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-secondary"></i><i class="fa fa-laptop fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-secondary"></i><i class="fa fa-lock fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!--this is the card-->
+<!-- <section class="staffs">
+    <br>
+    <div class="">
+        <div class="row row-content">
+            <div class="col-12 col-sm-4 col-md-3 offset-md-1">
+                <div class="card"><div class="card-body cardd"><img  class="col-12" src="img/kiya.jpg" alt="">
+                    </div></div>
+                    <div class="card-footer" style="background-color: #37434dd3;">Manager</div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 offset-md-1">
+                <div class="card"><div class="card-body cardd"><img  class="col-12" src="img/kiya.jpg" alt="">
+                    </div></div>
+                    <div class="card-footer" style="background-color: #37434dd3;">Manager</div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 offset-md-1">
+                <div class="card"><div class="card-body cardd"><img  class="col-12" src="img/kiya.jpg" alt="">
+                   </div></div>
+                    <div class="card-footer" style="background-color: #37434dd3;">Manager</div>
+            </div>
+
+
+
+
+
+            
+        </div>
+    </div>
+</section> -->
+<section id="team" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="img/kiya.jpg" />
+                    <h4>Kay Garland</h4>
+                    <p class="text-muted">Lead Designer</p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="img/kiya.jpg" />
+                    <h4>Larry Parker</h4>
+                    <p class="text-muted">Lead Marketer</p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member"><img class="rounded-circle mx-auto" src="img/kiya.jpg" />
+                    <h4>Diana Pertersen</h4>
+                    <p class="text-muted">Lead Developer</p>
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<section class="row container">
+<div class=" col-sm-3">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis doloremque unde, nisi omnis tenetur necessitatibus quibusdam possimus nesciunt, voluptate fugiat velit officia perspiciatis iste. Ipsa at ipsum, sed, fugit quis incidunt eveniet laborum sint iure quia natus vitae. Tenetur dolore deleniti fugiat. Et quisquam maxime, quia nihil ipsa ipsam?</p>
+</div>
+<!--contact --><div class="contact col-12 offset-sm-1 col-sm-8">
+    <div class="card">
+        <div class="card-header">ContactUs</div>
+        <div class="card-body">
+    <form>
+   <div class="form-row">
+    <label for="" class=" col-2 form-label">E-Mail</label>
+       <div class="form-group   col-6 ">
+              
+               <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+       </div>
+       </div>
+       <div class="form-row">
+    <label for="" class=" col-2 form-label">Message</label>
+
+       <div class="form-group ">
+       
+           <!-- <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+         -->
+         <textarea class="form-control" name="" id="" cols="60" rows="10"></textarea>
+       </div>
+     
+   </div>
+   <div class="row">
+ 
+       <button type="submit" class="btn btn-primary btn-sm ml-1 offset-10"  >Submit</button>        
+   </div>
+</form></div></div></div></section>
+
+
+<!--this is the footer-->
+    <footer style="background-color:#37434d;color:#ffffff;" class="footer">
+      
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-3 item">
@@ -93,8 +259,8 @@
                 </div>
                 <p class="copyright">Company Name © 2017</p>
             </div>
-        </footer>
-    </div></footer>
+       
+   </footer>
     
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
