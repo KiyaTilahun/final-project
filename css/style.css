@@ -6,6 +6,10 @@
   max-width: 200px;
   max-height: 200px;
 }
+.brand{
+  color: white !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
 /* i{
   background-color: black;
   color: white;
@@ -51,7 +55,9 @@ section{
     .staffs{
       display: none;
     }
-    
+    .brand{
+      text-align: left !important;
+    }
   }
   .carimg{
 max-height: 300px;
@@ -62,3 +68,23 @@ max-height: 300px;
    
   }
   
+  .modal{
+    overflow: hidden !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%,-50%) !important;
+    /* z-index: 10 !important; */
+  }
+  
+/* .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  z-index: 5;
+}
+.hidden{
+  display:none;
+} */
