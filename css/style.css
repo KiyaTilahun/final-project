@@ -24,6 +24,7 @@
 .modal-head{
   background-color: #37434dd3;
 }
+
 .carimg{
   height: 300px;
 }
@@ -76,6 +77,10 @@ max-height: 300px;
     /* z-index: 10 !important; */
   }
   
+  .list-inline-item i:hover{
+    color:blue !important;
+    scale: 1.2;
+  }
 /* .overlay{
   position: absolute;
   top: 0;
@@ -88,3 +93,13 @@ max-height: 300px;
 .hidden{
   display:none;
 } */
+
+
+/* navigation styling */
+.active{
+  color: gold !important;
+}
+.nav-link:hover{
+  color: gold !important;
+
+}

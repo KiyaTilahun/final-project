@@ -17,10 +17,10 @@
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#"><i class="fa fa-wpexplorer"></i> Explore</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#"><i class="fa fa-star-o"></i> Features</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#"><i class="fa fa-user-circle-o"></i> Portfolio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" style="color:#ffffff;" href="#"> Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#services">Services</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#staffs">Staffs</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" style="color:#ffffff;" href="#contactus">Contact</a></li>
                     <li class="nav-item" role="presentation"><i class="fa fa-sign-in"></i>  <button style=" border:none;background-color: #37434d00;"  data-toggle="modal" data-target="#loginModal" class="signin" >Sign In</button></a></li>
                 </ul>
         </div>
@@ -67,6 +67,7 @@
       </div>
 
 
+      <!--this is the modal-->
       <div id="loginModal" class="modal fade" role="dialog" style="display: none;top:50%;left:50%;transform: translate(-50%,-50%);" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="content">
           <div class="modal-content col-md-8"  >
@@ -76,13 +77,13 @@
             </div>
             <div class="modal-body">   
                   <form class="form">
-                  <div class="form-group">
+                  <div class="form-group form-row">
                           <label for="exampleInputEmail3" class="form-label">Email</label>
                           <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
                   </div>
                  
                   <div class="form-group ">
-                    <label for="exampleInputEmail3" class="form-label">Email</label>
+                    <label for="exampleInputEmail3" class="form-label">Password</label>
 
                       <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
                   </div>
@@ -103,6 +104,8 @@
         </div>
       </div>  
 
+
+      <br><br>
       <section id="services">
         <div class="container">
             <div class="row">
@@ -127,37 +130,15 @@
             </div>
         </div>
     </section>
-      <!--this is the card-->
-<!-- <section class="staffs">
-    <br>
-    <div class="">
-        <div class="row row-content">
-            <div class="col-12 col-sm-4 col-md-3 offset-md-1">
-                <div class="card"><div class="card-body cardd"><img  class="col-12" src="img/kiya.jpg" alt="">
-                    </div></div>
-                    <div class="card-footer" style="background-color: #37434dd3;">Manager</div>
-            </div>
-            <div class="col-12 col-sm-4 col-md-3 offset-md-1">
-                <div class="card"><div class="card-body cardd"><img  class="col-12" src="img/kiya.jpg" alt="">
-                    </div></div>
-                    <div class="card-footer" style="background-color: #37434dd3;">Manager</div>
-            </div>
-            <div class="col-12 col-sm-4 col-md-3 offset-md-1">
-                <div class="card"><div class="card-body cardd"><img  class="col-12" src="img/kiya.jpg" alt="">
-                   </div></div>
-                    <div class="card-footer" style="background-color: #37434dd3;">Manager</div>
-            </div>
-
-
-
-
-
-            
-        </div>
-    </div>
-</section> -->
-<section id="team" class="bg-light">
+    <br><br>
+<section id="team staffs" class="bg-light">
     <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">Staffs</h2>
+                <h3 class="text-muted section-subheading">Meet some of our members</h3>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member"><img class="rounded-circle mx-auto" src="img/kiya.jpg" />
@@ -196,24 +177,26 @@
     </div>
 </section>
 <hr>
-<section class="row container">
-<div class=" col-sm-3">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis doloremque unde, nisi omnis tenetur necessitatibus quibusdam possimus nesciunt, voluptate fugiat velit officia perspiciatis iste. Ipsa at ipsum, sed, fugit quis incidunt eveniet laborum sint iure quia natus vitae. Tenetur dolore deleniti fugiat. Et quisquam maxime, quia nihil ipsa ipsam?</p>
-</div>
-<!--contact --><div class="contact col-12 offset-sm-1 col-sm-8">
+<section class="row container" id="contactus">
+    <div class="col-12 col-sm-4 mx-auto text-center">
+        <h2 class="section-heading">Let&#39;s Get In Touch!</h2>
+        <hr class="my-4" />
+        <p class="mb-5">Ready to start your next project with us? That&#39;s great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+    </div>
+<!--contact --><div class="contact col-12 offset-sm-1 col-sm-7">
     <div class="card">
         <div class="card-header">ContactUs</div>
         <div class="card-body">
     <form>
    <div class="form-row">
-    <label for="" class=" col-2 form-label">E-Mail</label>
+    <label for="" class=" col-4 col-sm-2 form-label">E-Mail</label>
        <div class="form-group   col-6 ">
               
                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
        </div>
        </div>
        <div class="form-row">
-    <label for="" class=" col-2 form-label">Message</label>
+    <label for="" class=" col-4 col-sm-2 form-label">Message</label>
 
        <div class="form-group ">
        
@@ -237,10 +220,15 @@
                 <div class="row">
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Social media</h3>
-                        <ul>
+                        <!-- <ul>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Instagram</a></li>
                             <li><a href="#">Youtube  </a></li>
+                        </ul> -->
+                        <ul class="list-inline mb-5">
+                            <li class="list-inline-item"><a class="text-white social-link rounded-circle" href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
+                            <li class="list-inline-item"><a class="text-white social-link rounded-circle" href="#"><i class="fa fa-instagram fa-3x"></i></a></li>
+                            <li class="list-inline-item"><a class="text-white social-link rounded-circle" href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
@@ -253,7 +241,7 @@
                     </div>
                     <div class="col-md-6 item text">
                         <h3>Mekodoniya Charity Association</h3>
-                        <p>We are an organization focused on helping the lives of the elderly and those with mental disabilities, by providing all basic services (food, clothes, shelter, hygiene facilities, medical, educational and others) to the residents in the center.</p>
+                        <p style="font-weight: lighter;opacity:70%;">We are an organization focused on helping the lives of the elderly and those with mental disabilities, by providing all basic services (food, clothes, shelter, hygiene facilities, medical, educational and others) to the residents in the center.</p>
                     </div>
                     <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
                 </div>
