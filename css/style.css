@@ -23,9 +23,7 @@
 .team-member{
   text-align: center;
 }
-.modal-head{
-  background-color: #37434dd3;
-}
+
 
 .card{
   border: none;
@@ -65,11 +63,18 @@ section{
   }
   
   .modal{
+    position: absolute;
     overflow: hidden !important;
+    height: 70vh;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%,-50%) !important;
-    /* z-index: 10 !important; */
+
+
+
+  }
+  .modal-content{
+    background-color: rgba(255, 255, 255, .60) !important;
   }
   
   .list-inline-item i:hover{
@@ -100,10 +105,7 @@ section{
 }
 /* images */
 
-/* .carimg{
-  height: 300px;
-  filter: brightness(20%);
-} */
+
 .team-member img{
   /* border: 5px solid rgba(255, 252, 252, 0.404); */
   /* filter: brightness(40%); */
@@ -153,7 +155,11 @@ section{
   font-family: 'Tilt Neon', cursive;
 }
 .section{
+  transition: ease-in 1s;
   font-family: 'Tilt Neon', cursive;
+}
+.section img {
+  padding: 20px;
   
 }
 .loog{
