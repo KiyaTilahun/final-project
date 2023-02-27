@@ -1,0 +1,83 @@
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap"); */
+
+:root {
+  --main-color: #3498db;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+
+
+
+
+.form1 {
+  padding: 30px 40px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.control1 {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.control1 label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.control1 input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.control1 input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.control1.success input {
+  border-color: var(--success-color);
+}
+
+.control1.error input {
+  border-color: var(--error-color);
+}
+
+.control1 small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.control1.error small {
+  visibility: visible;
+}
+
+.form1 button {
+  cursor: pointer;
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+
+

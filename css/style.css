@@ -25,9 +25,6 @@
   background-color: #37434dd3;
 }
 
-.carimg{
-  height: 300px;
-}
 .card{
   border: none;
   outline: none;
@@ -37,6 +34,7 @@
   
 }
 .cardd img{
+
   max-height: 300px;
   /* width: 100px; */
   /* border-radius: 50%; */
@@ -65,7 +63,7 @@ max-height: 300px;
 /* filter: grayscale(90%); */
   }
   .carousel-caption{
-    background-color:#37434d86;
+    /* background-color:#37434d86; */
    
   }
   
@@ -102,4 +100,37 @@ max-height: 300px;
 .nav-link:hover{
   color: gold !important;
 
+}
+/* images */
+
+.carimg{
+  height: 300px;
+  filter: brightness(20%);
+}
+.team-member img{
+  /* border: 5px solid rgba(255, 252, 252, 0.404); */
+  /* filter: brightness(40%); */
+  max-height: 200px !important;
+  margin: 40px;
+
+}
+.team-member img:hover{
+  
+  filter: brightness(90%);
+}
+.rounded-circle{
+  width: 120px  !important;
+  height: 120px !important;
+}
+
+
+
+
+/* section hidding */
+.section-hidden{
+  opacity: 0 !important;
+  transform: translateY(8px);
+}
+.section{
+  transition: transform 1s ,opacity 1s;
 }
