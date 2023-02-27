@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
 .img{
     width:50px;
     height: 40px;
@@ -51,20 +53,15 @@ section{
     }
   }
   @media  screen and (max-width:600px) {
+    .carimg{
+      height: 40vh !important;
+    }
     .staffs{
       display: none;
     }
     .brand{
       text-align: left !important;
     }
-  }
-  .carimg{
-max-height: 300px;
-/* filter: grayscale(90%); */
-  }
-  .carousel-caption{
-    /* background-color:#37434d86; */
-   
   }
   
   .modal{
@@ -103,10 +100,10 @@ max-height: 300px;
 }
 /* images */
 
-.carimg{
+/* .carimg{
   height: 300px;
   filter: brightness(20%);
-}
+} */
 .team-member img{
   /* border: 5px solid rgba(255, 252, 252, 0.404); */
   /* filter: brightness(40%); */
@@ -133,4 +130,25 @@ max-height: 300px;
 }
 .section{
   transition: transform 1s ,opacity 1s;
+}
+
+
+
+/* carousel */
+
+.carimg{
+  height: 80vh;
+
+  
+}
+.carimg {
+  filter: brightness(50%);
+}
+@keyframes example {
+  0%{opacity:0;}
+100%{opacity: 1;}
+  
+}
+.landing{
+  font-family: 'Tilt Neon', cursive;
 }
