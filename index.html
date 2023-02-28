@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KS</title>
      <!-- Bootstrap CSS -->
+     <!--build:css css/main.css-->
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="css/form1.css">
-
+<!--endbuild-->
 
 
 </head>
@@ -432,10 +433,35 @@
        
    </footer>
    <div class="arrow" style="position:fixed;bottom: 10px;right: 10px;font-size: 30px;"><a href="#home"><i  class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></div>
-    
+    <!--build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-   <script src="js/script.js"></script>
+   
+   <!-- endbuild -->
+   <!-- <script>const allsections=document.querySelectorAll(".section");
+    const navs=document.querySelectorAll('.nav-link');
+    
+    const revealsection=function(entries,observer){
+    const [entry]=entries;
+    if(!entry.isIntersecting) return;
+    entry.target.classList.remove("section-hidden");
+    observer.unobserve(entry.target);
+     console.log(entry);
+    }
+    const sectionobserver=new IntersectionObserver(revealsection,{
+    root:null,
+    threshold:0.30,
+    });
+    allsections.forEach(function(section){
+      sectionobserver.observe(section);
+      section.classList.add("section-hidden");
+    })
+    navs.forEach(function(nav){
+      nav.addEventListener("click",function(e){
+      const target=document.querySelector(e.target.getElementsByTagName("href"));
+      console.log(target);
+      })})
+    </script> -->
 </body>
 </html>
