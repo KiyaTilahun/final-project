@@ -1,4 +1,5 @@
 const allsections=document.querySelectorAll(".section");
+const navs=document.querySelectorAll('.nav-link');
 
 const revealsection=function(entries,observer){
 const [entry]=entries;
@@ -15,5 +16,9 @@ allsections.forEach(function(section){
   sectionobserver.observe(section);
   section.classList.add("section-hidden");
 })
-
+navs.forEach(function(nav){
+  nav.addEventListener("click",function(e){
+  const target=document.querySelector(e.target.getElementsByTagName("href"));
+  console.log(target);
+  })})
 
